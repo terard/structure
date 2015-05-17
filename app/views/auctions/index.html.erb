@@ -1,10 +1,11 @@
 <h1>Auctions</h1>
 
-<%= @auction.name %>
 <table border="1">
 
-  <tr>
-    <td>one</td>
-  </tr>
+  <% @auctions.each do |auction| %>
+    <tr>
+      <td><%= auction.name %></td>
+    </tr>
+  <% end %>
 
 </table>
